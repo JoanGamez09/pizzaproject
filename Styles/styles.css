@@ -1,0 +1,164 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: cursive;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #821d1d;
+    color: #fff;
+   }
+.nav-links a {
+    color: #fff;
+   }
+/* LOGO */
+.logo{
+  font-size: 32px;
+ }
+.logo img{
+    width: 100px;
+    height: 70px;
+   }
+   /* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+.menu li:hover {
+    background-color: #e2b808;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+.menu li {
+    padding: 5px 14px;
+   }
+
+
+main{
+  margin-bottom: 100px;
+}  
+/* Toppings*/
+.container {
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    width: 550px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  }
+  
+  .brand-logo {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  .inputs {
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 30px;
+    display: block;
+    border-right: black 1px;
+  }
+  
+  .container label, input, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  label {
+    margin-bottom: 4px;
+  }
+  
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  input::placeholder {
+    color: gray;
+  }
+  
+  input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  
+  button {
+    color: white;
+    margin-top: 20px;
+    background: #38c172;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: 0.5s;
+  }
+  
+  
+span {
+  margin: 20px;
+}
+
+/*FOOTER*/
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #821d1d;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}

@@ -38,7 +38,7 @@ function getToppings() {
                 if (json.toppings.length > 0) {
                     $("#listToppings").empty();
                     $.each(json.toppings, function(key, value) {
-                        $("#listToppings").append("<li class='list-group-item d-flex justify-content-between align-items-center'><span>" + value + "</span><span class='badge badge-danger badge-pill' onClick='deleteTopping("+key+")' ><i class='fa fa-close'></i></span></li>");
+                        $("#listToppings").append("<li><div style='display:flex;'><span>" + value + "</span><button onClick='deleteTopping("+key+")' style= 'background:#ff0000; width:30px; height:20px; margin:auto;'>-</button></div></li>");
                     });
                     $('p.hasToppings').show();
                     $('p.isEmpty').hide();

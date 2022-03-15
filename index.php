@@ -83,30 +83,60 @@ function printForm()
 	<html>
 
 	<head>
+		<link rel="stylesheet" href="./Styles/styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Pizza Pizza</title>
-		<script src="./jquery.min.js"></script>
+		<title>Mendoza Corporation</title>
+		<script src="./Scripts/jquery.min.js"></script>
 	</head>
 
 	<body>
-
-		<div>
-			<div>
-				<div>
+		<header>
+			<nav class="navbar">
+				<div class="logo">
+					<img src="./Img/Mendozaco.png"> 
+					Mendoza´s Pizza
+				</div>
+				
+				<ul class="nav-links">
+					<div class="menu">
+						<li><a href="#">Pizzas</a></li>
+						<li><a href="#">Combos</a></li>
+						<li><a href="#">Extras</a></li>
+						<li><a href="#">My order</a></li>
+						<li><a href="#">Login</a></li>
+					</div>
+				</ul>
+ 			</nav>
+		</header>
+		<main>
+			<div class="container">
+				<div class="inputs">
+					<div class="brand-logo">
+						<img src="./Img/pizza1.png">
+					</div>
 					<label for="topping">What topping would you like?</label>
 					<div>
 						<input type="text"  name="topping" id="topping" value="" >
 						<div>
 							<button type="button" onclick="addTopping()">Add it!</button>
 						</div>
-					</div>
-					<div>
-						<ul id="listToppings"></ul>
+						<div>
+							<button>Add to cart</button>
+						</div>
 					</div>
 				</div>
+				<div>
+					<ul id="listToppings"></ul>
+				</div>
 			</div>
-		</div>
-		<script src="./index.js"></script>
+		</main>
+		<footer>
+        	<div class="footer-content">
+				<p>All rights reserved © 2022 | Mendoza Corporation</p>
+			</div>
+    	</footer>
+
+		<script src="./Scripts/index.js"></script>
 	</body>
 
 	</html>
